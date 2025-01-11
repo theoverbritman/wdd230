@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #2B6B9B; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0.5em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0;
+    color: #333333;
+}
+
+h3 {
+    background-color: #2B6B9B; /* Blue background */
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 5px;
+}
+
+/* Card Sections */
+.card {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 600px;
+    background-color: #F7F7F7;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card ul li {
+    margin: 0.5em 0;
+}
+
+.card ul li a {
+    color: #1A73E8; /* Blue links */
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Information Section */
+.card p {
+    margin: 0.5em 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2B6B9B; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer #lastModified {
+    color: #FFD700; /* Gold text */
+}
+
+/* Country Flag Styling */
+footer img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
