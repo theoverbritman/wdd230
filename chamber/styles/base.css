@@ -135,6 +135,18 @@ input:checked + .slider:before {
     color: lightgray;
 }
 
+/* Fix: Ensure the hero section is fully visible in dark mode */
+.dark-mode #hero {
+    background-color: #111;
+    color: white;
+}
+
+/* Ensure text inside hero section remains visible */
+.dark-mode #hero h2,
+.dark-mode #hero p {
+    color: white;
+}
+
 /* Dark Mode Toggle - Positioning */
 .toggle-container {
     position: absolute;
