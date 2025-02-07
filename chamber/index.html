@@ -4,27 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join the Chamber of Commerce and grow your business with networking opportunities and events.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Logan Davis">
     
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Join the Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/social-preview.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-
-    <title>Austin Chamber of Commerce | Home</title>
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/base.css">
+    <title>Austin Chamber of Commerce | Home</title>
 </head>
 <body>
-    <!-- Header with Navigation -->
     <header>
         <h1>Austin Chamber of Commerce</h1>
-        <nav>
+        <!-- Hamburger Menu Button (for Mobile) -->
+        <button id="menu-toggle" class="menu-icon">☰</button>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -33,63 +26,49 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Dark Mode Toggle Switch -->
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="mode">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
         <section id="hero">
-            <img src="images/hero.jpg" alt="Community Event">
+            <img src="images/hero.png" alt="Community Event">
             <h2>Grow Your Business with the Chamber</h2>
             <p>Join the chamber today and connect with local business leaders.</p>
             <a href="#" class="cta-button">Join Now</a>
         </section>
 
-        <!-- Call to Action -->
-        <section id="cta">
-            <h2>Become a Member Today!</h2>
-            <p>Unlock business growth opportunities.</p>
-            <a href="#">Join the Chamber</a>
-        </section>
-
-        <!-- Current Events -->
-        <section id="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Networking Mixer - Feb 20</li>
-                <li>Small Business Summit - March 5</li>
-                <li>Community Cleanup - April 15</li>
-            </ul>
-        </section>
-
-        <!-- Weather Card -->
         <section id="weather">
             <h2>Local Weather</h2>
             <p>Currently: <span id="temp">Loading...</span>°C</p>
             <p>Condition: <span id="condition">Loading...</span></p>
         </section>
 
-        <!-- Business Spotlights -->
         <section id="spotlights">
             <h2>Business Spotlights</h2>
             <div class="spotlight">
-                <h3>ABC Marketing</h3>
-                <p>Helping businesses grow with innovative strategies.</p>
+                <h3>Franklin Barbecue</h3>
+                <p>Legendary Texas BBQ, a must-visit!</p>
             </div>
             <div class="spotlight">
-                <h3>Local Cafe</h3>
-                <p>Best coffee in town, fresh and locally sourced.</p>
+                <h3>BookPeople</h3>
+                <p>Independent bookstore loved by locals.</p>
             </div>
             <div class="spotlight">
-                <h3>XYZ Tech Solutions</h3>
-                <p>Providing cutting-edge IT solutions.</p>
+                <h3>Home Slice Pizza</h3>
+                <p>Iconic pizzeria serving NY-style slices.</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>Contact: contact@chamber.com | 123-456-7890</p>
+        <p>Contact: contact@austinchamber.com | 123-456-7890</p>
         <p>Developed by Logan Davis | WDD 230 Project</p>
         <p>Last updated: <span id="lastModified"></span></p>
     </footer>
