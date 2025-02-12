@@ -43,18 +43,38 @@ nav ul li a {
 /* Mobile Styles */
 @media (max-width: 768px) {
     #menu-toggle {
-        display: block; /* Show on mobile */
+        display: block; /* Show hamburger icon on mobile */
+        z-index: 1001; /* Keep button on top */
     }
 
+    /* Keep header fixed at the top */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #004a99;
+        z-index: 1100; /* Ensure header is above everything */
+        padding: 15px;
+    }
+
+    /* Prevent content from being covered by fixed header */
+    body {
+        padding-top: 70px; /* Adjust based on header height */
+    }
+
+    /* Adjust mobile nav menu */
     nav {
-        display: none; /* Hide menu on mobile */
+        display: none; /* Hide menu by default */
         flex-direction: column;
         background: #004a99;
-        position: absolute;
+        position: absolute; /* Ensures it appears BELOW the header */
         width: 100%;
-        top: 60px;
+        top: 100%; /* Positions menu right below the header */
         left: 0;
         text-align: center;
+        padding: 20px 0;
+        z-index: 1000; /* Keep it above page content */
     }
 
     #nav-menu.active {
@@ -68,6 +88,31 @@ nav ul li a {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    /* Prevent scrolling when menu is open */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Adjust the position of the menu button */
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+    position: absolute; /* Position it relative to the header */
+    top: 45px;
+    right: 65px; /* Slightly moved left from original (previously ~60px) */
+    z-index: 1101; /* Ensure it's above other elements */
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block; /* Show on mobile */
     }
 }
 

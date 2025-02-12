@@ -35,3 +35,23 @@ async function fetchWeather() {
     }
 }
 fetchWeather();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    const body = document.body;
+
+    // Toggle menu on button click
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+        body.classList.toggle("menu-open"); // Prevent scrolling when menu is open
+    });
+
+    // Close menu when a menu link is clicked
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+            body.classList.remove("menu-open");
+        });
+    });
+});
