@@ -14,6 +14,50 @@ header {
     padding: 1em 0;
 }
 
+/* Ensure the hero image stays fixed in place */
+.hero-image {
+    position: relative; /* Makes it a reference for .herolabel */
+    width: 800px; /* Fixed width to prevent movement */
+    max-width: 100%; /* Responsive within limits */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center it */
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Label (stays inside upper-right of hero image) */
+.herolabel {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    background: radial-gradient(#fff, #b69190);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 0.75rem 1rem;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.75);
+    opacity: 0.85;
+    font-size: 1rem;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Hero Label Text */
+.herolabel p {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-family: "Great Vibes", serif;
+}
+
+
+
+
 header img {
     border-radius: 50%;
     width: 120px;
