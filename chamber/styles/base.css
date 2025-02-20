@@ -260,18 +260,20 @@ footer {
 }
 
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+    gap: 20px;
 }
 
 .image-container figure {
-    margin: 0;
-    position: relative;
+    width: 80%; /* Set a responsive width */
+    max-width: 600px; /* Prevent images from being too wide */
+    margin: 0 auto;
 }
 
 .image-container img {
-    width: 100%;
+    width: 100%; /* Ensure images are responsive */
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
