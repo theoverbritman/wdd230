@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce and grow your business with networking opportunities and events.">
+    <meta name="author" content="Logan Davis">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Austin Chamber of Commerce | Home</title>
+</head>
+<body>
+    <header>
+        <h1>Austin Chamber of Commerce</h1>
+        <button id="menu-toggle" class="menu-icon">☰</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="mode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Main Layout with Sidebar & Image Gallery -->
+    <main class="grid-layout">
+        <aside class="sidebar">
+            <h2>Welcome Message</h2>
+            <p id="visit-message">Loading...</p>
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>🏆 Business Networking - March 10</li>
+                <li>🎤 Guest Speaker Series - April 5</li>
+                <li>🎉 Annual Gala - May 22</li>
+            </ul>
+        </aside>
+
+        <section class="gallery">
+            <h2>Local Attractions</h2>
+            <div class="image-container">
+                <figure><img src="images/photo1.webp" alt="Austin view" loading="lazy"><figcaption>Downtown Austin</figcaption></figure>
+                <figure><img src="images/photo2.webp" alt="Park scene" loading="lazy"><figcaption>Zilker Park</figcaption></figure>
+                <figure><img src="images/photo3.webp" alt="Bridge view" loading="lazy"><figcaption>Pennybacker Bridge</figcaption></figure>
+                <figure><img src="images/photo4.webp" alt="Music event" loading="lazy"><figcaption>Live Music Event</figcaption></figure>
+                <figure><img src="images/photo5.webp" alt="BBQ" loading="lazy"><figcaption>Famous BBQ</figcaption></figure>
+                <figure><img src="images/photo6.webp" alt="Capitol Building" loading="lazy"><figcaption>Texas State Capitol</figcaption></figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: contact@austinchamber.com | 123-456-7890</p>
+        <p>Developed by Logan Davis | WDD 230 Project</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visitTracker.js"></script>
+</body>
+</html>
