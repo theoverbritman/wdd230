@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Course Home Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Sign Up</h2>
+        <form id="registrationForm" action="record.html" method="GET">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and only contain letters and numbers">
+
+            <label for="passwordConfirm">Confirm Password:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please use a BYU-Idaho email (example@byui.edu)">
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" oninput="updateRatingValue(this.value)">
+            <span id="ratingValue">5</span>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Course Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function updateRatingValue(value) {
+            document.getElementById("ratingValue").textContent = value;
+        }
+
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            let password = document.getElementById("password");
+            let passwordConfirm = document.getElementById("passwordConfirm");
+
+            if (password.value !== passwordConfirm.value) {
+                alert("Passwords do not match. Please try again.");
+                password.value = "";
+                passwordConfirm.value = "";
+                password.focus();
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
