@@ -225,6 +225,116 @@ input:checked + .slider:before {
     margin: 20px 0;
 }
 
+/* ===== FORM STYLING ===== */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label & Input Styling */
+label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus, select:focus {
+    border-color: #004a99;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 74, 153, 0.5);
+}
+
+/* Membership Dropdown */
+select {
+    background: white;
+    cursor: pointer;
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #004a99;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #002a66;
+}
+
+/* Form Layout Adjustments for Mobile */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+.dark-mode form,
+.dark-mode .sidebar {
+    background: #333;  /* Dark grey background */
+    color: white;       /* White text for contrast */
+    border: 1px solid #555;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="tel"],
+.dark-mode textarea,
+.dark-mode select {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+
+.dark-mode input:focus, 
+.dark-mode textarea:focus, 
+.dark-mode select:focus {
+    border-color: #008cff;
+    box-shadow: 0 0 5px rgba(0, 140, 255, 0.5);
+}
+
+.dark-mode button[type="submit"] {
+    background: #008cff;
+    color: white;
+}
+
+.dark-mode button[type="submit"]:hover {
+    background: #0066cc;
+}
+
 footer {
     background: #333;
     color: white;
