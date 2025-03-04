@@ -1,0 +1,126 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/holygrail.html",
+            "title": "Holy Grail"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design.html",
+            "title": "Design Example"
+          },
+          {
+            "url": "lesson02/mediaquery.html",
+            "title": "Media Queries"
+          },
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles Document"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "https://codepen.io/theoverbritman/pen/LEPJKrB",
+            "title": "Responsive Menu"
+          },
+          {
+            "url": "images/Screenshot2025-01-21150920.png",
+            "title": "Combinator"
+          },
+          {
+            "url": "https://codepen.io/theoverbritman/pen/raNmOZV",
+            "title": "Pseudo Elements"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "https://codepen.io/theoverbritman/pen/vEBbXwM",
+            "title": "CSS Pseudo Classes"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "DOM Manipulation"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive Images"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/bom.html",
+            "title": "Local Storage"
+          },
+          {
+            "url": "lesson07/lazyload.html",
+            "title": "Lazy Loading"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/tablebuild.html",
+            "title": "HTML Table Data Presentation"
+          },
+          {
+            "url": "lesson08/form-start/index.html",
+            "title": "HTML Forms"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "lesson09/new-ward-members.json",
+            "title": "JSON Practice"
+          },
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Fetch API"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "lesson10/activity1.html",
+            "title": "Week 10 Activity 1"
+          },
+          {
+            "url": "lesson10/activity2.html",
+            "title": "Week 10 Activity 2"
+          }
+        ]
+      }
+    ]
+  }
