@@ -491,3 +491,27 @@ footer {
 .dark-mode .member p {
     color: #ddd; /* Light grey text for readability */
 }
+
+#banner {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

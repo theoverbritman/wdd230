@@ -52,10 +52,20 @@
         <section id="weather">
             <h2>Local Weather</h2>
             <p>Currently: <span id="temp">Loading...</span>°F</p>
-            <p>Wind Speed: <span id="windSpeed">Loading...</span> mph</p>
             <p>Condition: <span id="condition">Loading...</span></p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
+            <h3>Three-Day Forecast</h3>
+            <ul id="forecast">
+                <li>Day 1: <span id="day1">Loading...</span>°F</li>
+                <li>Day 2: <span id="day2">Loading...</span>°F</li>
+                <li>Day 3: <span id="day3">Loading...</span>°F</li>
+            </ul>
         </section>
+        
+        <div id="banner" class="hidden">
+            <p>Join us for the Chamber of Commerce Meet & Greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner">❌</button>
+        </div>
+        
 
         <section id="spotlights">
             <h2>Business Spotlights</h2>
@@ -83,5 +93,6 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

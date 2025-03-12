@@ -1,37 +1,23 @@
-// Fetch Weather Data for Austin, TX
+const apiKey = 'b4635b41512cb7d06f8fb094d949ebc1';
+const city = 'Austin';
+const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
+
 async function fetchWeather() {
     try {
-        let response = await fetch("https://wttr.in/Austin?format=j1");
-        let data = await response.json();
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        // Current weather
+        document.getElementById('temp').textContent = Math.round(data.list[0].main.temp);
+        document.getElementById('condition').textContent = data.list[0].weather[0].description;
 
-        let temp = data.current_condition[0].temp_C;
-        let condition = data.current_condition[0].weatherDesc[0].value;
-
-        document.getElementById("temp").textContent = temp;
-        document.getElementById("condition").textContent = condition;
+        // 3-day forecast (assuming 3-hour intervals, so picking every 8th entry)
+        document.getElementById('day1').textContent = Math.round(data.list[8].main.temp);
+        document.getElementById('day2').textContent = Math.round(data.list[16].main.temp);
+        document.getElementById('day3').textContent = Math.round(data.list[24].main.temp);
     } catch (error) {
-        document.getElementById("temp").textContent = "N/A";
-        document.getElementById("condition").textContent = "Could not load";
+        console.error('Error fetching weather data:', error);
     }
 }
+
 fetchWeather();
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
-    const body = document.body;
-
-    // Toggle menu on button click
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-        body.classList.toggle("menu-open"); // Prevent scrolling when menu is open
-    });
-
-    // Close menu when a menu link is clicked
-    document.querySelectorAll("#nav-menu a").forEach(link => {
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("active");
-            body.classList.remove("menu-open");
-        });
-    });
-});
