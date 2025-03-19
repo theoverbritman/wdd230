@@ -515,3 +515,25 @@ footer {
 .hidden {
     display: none;
 }
+
+.spotlight {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.spotlight h3 {
+    color: #004a99;
+}
+
+.spotlight p {
+    color: #555;
+}
+
+.spotlight small {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
