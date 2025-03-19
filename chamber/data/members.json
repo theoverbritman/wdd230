@@ -4,7 +4,7 @@
         "address": "500 Canyon Ridge Dr, Austin, TX",
         "phone": "512-973-8143",
         "website": "https://heb.com",
-        "image": "HEB-Logo.png",
+        "image": "HEB-Logo.webp",
         "membership": "Gold",
         "description": "Providing top-notch shopping to everyone."
     },
@@ -13,7 +13,7 @@
         "address": "500 W Canyon Ridge Dr #700, Austin, TX",
         "phone": "512-975-7095",
         "website": "https://modpizza.com",
-        "image": "mod_pizza.png",
+        "image": "mod_pizza.webp",
         "membership": "Silver",
         "description": "Food to feel good about."
     },
@@ -22,7 +22,7 @@
         "address": "10000 Research Blvd, Austin, TX",
         "phone": "512-418-8985",
         "website": "https://www.barnesandnoble.com",
-        "image": "Barnes-Noble-Logo.jpg",
+        "image": "Barnes-Noble-Logo.webp",
         "membership": "Bronze",
         "description": "Helping you to find the next good book for your shelf."
     },
@@ -31,7 +31,7 @@
         "address": "8917 Research Blvd, Austin, TX",
         "phone": "512-871-6126",
         "website": "https://autozone.com",
-        "image": "AutoZone-Logo.png",
+        "image": "AutoZone-Logo.webp",
         "membership": "Gold",
         "description": "Expert auto repair and maintenance services."
     },
@@ -40,7 +40,7 @@
         "address": "2700 W Anderson Ln, Austin, TX",
         "phone": "512-766-3486",
         "website": "https://silkandsagedesign.com",
-        "image": "SilkandSageLogoWOB.png",
+        "image": "SilkandSageLogoWOB.webp",
         "membership": "Silver",
         "description": "Home and interior design."
     },
@@ -49,7 +49,7 @@
         "address": "4111 Marathon Blvd, Austin, TX",
         "phone": "512-585-5390",
         "website": "https://austinfitnessclinic.com",
-        "image": "AFCfull_logo.jpg",
+        "image": "AFCfull_logo.webp",
         "membership": "Bronze",
         "description": "State-of-the-art gym and wellness center."
     },
@@ -58,7 +58,7 @@
         "address": "4615 N Lamar, Austin, TX",
         "phone": "512-241-1300",
         "website": "https://realtyaustin.com",
-        "image": "Realty_Austin_logo_2018_Logo.jpg",
+        "image": "Realty_Austin_logo_2018_Logo.webp",
         "membership": "Gold",
         "description": "Helping you find your dream home in Austin."
     }
