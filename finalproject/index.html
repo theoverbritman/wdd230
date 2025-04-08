@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots | Motor Scooter Rentals in Cozumel</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <div class="weather-alert" id="weatherAlert">
+        <p>Today's High: <span id="tempMax"></span>°F</p>
+        <button>X</button>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">Scoots</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/cozumel-beach.jpg" alt="Cozumel Beach" loading="lazy">
+            <div class="hero-text">
+                <h1>Explore Cozumel with Scoots</h1>
+                <p>Rent a scooter, ATV, or Jeep and discover the island's hidden gems!</p>
+                <a href="reservations.html" class="cta">Make a Reservation</a>
+            </div>
+        </section>
+        <section class="rentals-summary">
+            <h2>Our Rentals</h2>
+            <p>Scooters for 1-2 people, ATVs for up to 4, and Jeeps for up to 5. Unlimited mileage included!</p>
+        </section>
+        <section class="weather">
+            <h2>Current Weather in Cozumel</h2>
+            <div id="weatherData"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@scoots.com | (123) 456-7890</p>
+        <p><a href="https://socialmedia.com/scoots">Follow Us on Social Media</a></p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+    <script src="scripts/weather-alert.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+</html>

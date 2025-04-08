@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots | Reservations</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Scoots</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservations">
+            <h1>Make a Reservation</h1>
+            <div class="agreement">
+                <h2>Rental Agreement</h2>
+                <ul>
+                    <li>$50 security deposit required.</li>
+                    <li>Valid driver's license required at rental time.</li>
+                    <li>No riders under 12 years old.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance included; damage insurance optional.</li>
+                    <li>Free delivery for 2+ day rentals to Cozumel hotels/Airbnbs.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit/debit card, or Venmo.</li>
+                    <li>Return to either location.</li>
+                </ul>
+            </div>
+            <form class="reservation-form">
+                <label>Date: <input type="date" name="date" required></label>
+                <label>Period:
+                    <select name="period" required>
+                        <option value="half">Half Day (3 hrs)</option>
+                        <option value="full">Full Day</option>
+                    </select>
+                </label>
+                <label>Rental Type:
+                    <select name="rentalType" required>
+                        <option value="metro">Honda Metro Scooter</option>
+                        <option value="dio">Honda Dio Scooter</option>
+                        <option value="pcx150">Honda PCX150 Scooter</option>
+                        <option value="pioneer">Honda Pioneer ATV</option>
+                        <option value="jeep4">Jeep Wrangler - 4 door</option>
+                        <option value="jeep2">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+                <label>Number: <input type="number" name="number" min="1" required></label>
+                <label>Phone: <input type="tel" name="phone" required></label>
+                <label>Name: <input type="text" name="name" required></label>
+                <label>Email: <input type="email" name="email" required></label>
+                <label>Home State/Country: <input type="text" name="home" required></label>
+                <label>Cruise Line (if applicable): <input type="text" name="cruise"></label>
+                <label>Special Accommodations: <textarea name="comments"></textarea></label>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: info@scoots.com | (123) 456-7890</p>
+        <p><a href="https://socialmedia.com/scoots">Follow Us on Social Media</a></p>
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+</body>
+</html>
